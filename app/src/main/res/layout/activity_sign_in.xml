@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="rohan.darshan.abhi.whatsyourtalent.SignIn">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@drawable/add_user"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imageView"
+                android:layout_alignParentTop="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/userNameET"
+                android:layout_margin="5dp"
+
+                android:hint="Enter the user name*"
+                android:layout_below="@+id/imageView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/FbUrlEt"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/userNameET"
+                android:hint="Enter your facebook url" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/twitterEt"
+                android:layout_margin="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/FbUrlEt"
+                android:hint="Enter your twitter handle" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/websiteUrlEt"
+                android:layout_below="@+id/twitterEt"
+                android:layout_margin="5dp"
+                android:layout_marginTop="25dp"
+                android:hint="Enter your website url " />
+
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btn_sign_in"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
